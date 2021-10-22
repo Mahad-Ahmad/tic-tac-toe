@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Square from "./square";
+
 function Board({ squares, onClick }) {
   function renderSquare(i) {
     return (
