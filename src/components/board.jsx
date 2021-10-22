@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Square from "./square";
-function Board(props) {
+function Board({ squares, onClick }) {
   function renderSquare(i) {
     return (
       <Square
-        value={props.squares[i]}
+        value={squares[i]}
         onClick={() => {
-          props.onClick(i);
+          onClick(i);
         }}
       />
     );
