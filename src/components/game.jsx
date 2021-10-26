@@ -2,7 +2,7 @@ import Board from "./board";
 import React, { useState } from "react";
 
 import "../index.css";
-function Game() {
+const Game = () => {
   const [state, setState] = useState({
     history: [
       {
@@ -48,7 +48,7 @@ function Game() {
       </li>
     );
   });
-  
+
   function jumpTo(step) {
     setStepNum(step);
     setXIsNext(step % 2 === 0);
@@ -69,7 +69,7 @@ function Game() {
       </div>
     </div>
   );
-}
+};
 
 function calculateWinner(squares) {
   const lines = [
