@@ -15,7 +15,7 @@ const Game = () => {
   const history = state.history;
   const current = history[stepNum];
 
-  function handleClick(i) {
+  const handleClick = (i) => {
     const history = state.history.slice(0, stepNum + 1);
     const current = history[history.length - 1];
     const squares = current.squares.slice();
@@ -32,7 +32,7 @@ const Game = () => {
     });
     setStepNum(history.length);
     setXIsNext(!xIsNext);
-  }
+  };
   function calculateWinner(squares) {
     const lines = [
       [0, 1, 2],
