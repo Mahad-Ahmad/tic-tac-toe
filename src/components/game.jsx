@@ -33,7 +33,7 @@ const Game = () => {
     setStepNum(history.length);
     setXIsNext(!xIsNext);
   };
-  function calculateWinner(squares) {
+  const calculateWinner = (squares) => {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -55,7 +55,7 @@ const Game = () => {
       }
     }
     return null;
-  }
+  };
 
   const winner = calculateWinner(current.squares);
   let status;
