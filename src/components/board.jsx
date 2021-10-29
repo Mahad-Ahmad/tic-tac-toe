@@ -1,6 +1,6 @@
 import Square from "./square";
 
-function Board({ squares, onClick }) {
+const Board = ({ squares, onClick }) => {
   function renderSquare(i) {
     return (
       <Square
@@ -31,6 +31,6 @@ function Board({ squares, onClick }) {
       </div>
     </div>
   );
-}
+};
 
 export default Board;
